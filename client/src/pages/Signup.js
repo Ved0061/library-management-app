@@ -7,7 +7,7 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSignup = async () => {
-    await axios.post("http://localhost:5000/api/auth/signup", form);
+    await axios.post("https://library-management-app-1-qu4o.onrender.com/api/auth/signup", form);
     navigate("/");
   };
 
