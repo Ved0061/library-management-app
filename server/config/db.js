@@ -7,7 +7,7 @@ const connectDB = async () => {
   } catch (error) {
     console.log("Database connection failed ❌");
     console.error(error.message);
-    process.exit(1);
+    console.error(error);
   }
 };
 
